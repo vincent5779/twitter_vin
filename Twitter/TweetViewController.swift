@@ -10,13 +10,12 @@ import UIKit
 
 class TweetViewController: UIViewController {
 
-    @IBOutlet weak var tweetTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tweetTextView.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
-    
+    @IBOutlet weak var tweetTextView: UITextView!
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
